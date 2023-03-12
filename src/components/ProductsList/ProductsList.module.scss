@@ -1,0 +1,36 @@
+.wrapper {
+    width: 80%;
+    margin: 60px auto 0 auto;
+    .title {
+        font-size: 25px;
+    }
+    .products-list {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px 15px;
+    }
+}
+
+
+@media (max-width: 1300px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .wrapper {
+        .products-list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+
+@media (max-width: 540px) {
+    .wrapper {
+        width: 96%;
+    }
+}

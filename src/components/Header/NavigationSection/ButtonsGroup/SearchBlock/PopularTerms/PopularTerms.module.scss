@@ -1,0 +1,27 @@
+@import "../../../../../../default_variables.scss";
+
+
+.popular-block {
+    padding: 80px 0;
+
+    .title {
+        color: $text-color-grey;
+        font-weight: 100;
+        margin-bottom: 25px;
+    }
+
+    .terms-list {
+        display: grid;
+        grid-template-rows: auto;
+        grid-row-gap: 15px;
+
+        li {
+            font-size: 19px;
+
+            a {
+                color: $black;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,28 @@
+.slider {
+    box-shadow: rgb(229 229 229) 0px -1px 0px 0px inset;
+    background: rgb(247, 247, 247);
+    padding: 20px 23%;
+    position: relative;
+    .btnNext {
+        width: 30px;
+        height: 30px;
+        background-color: red;
+        // position: absolute;
+    }
+    .slide {
+        display: grid;
+        grid-template-columns: minmax(100px, 30%) minmax(100px, 30%);
+        grid-gap: 30px;
+        justify-content: center;
+        align-items: center;
+        color: rgb(34, 34, 34);
+        font-weight: 100;
+        text-align: center;
+        .title {
+            text-transform: uppercase;
+        }
+        .otherText {
+            font-size: 12px;
+        }
+    }
+}

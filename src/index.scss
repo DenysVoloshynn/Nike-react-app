@@ -1,0 +1,49 @@
+@import "./default_variables.scss";
+
+
+
+html, body, div, p,
+a, img, i,form, label, 
+footer, header, nav, 
+output, section, button, ul, li,
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+	box-sizing: border-box;
+}
+footer, header, nav, section {
+    display: block;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('./fonts/HelveticaNeueCyr-Medium.eot');
+    src: local('./fonts/HelveticaNeueCyr-Medium'),
+        url('./fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
+        url('./fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
+        url('./fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+html {
+    overflow-x: hidden;
+    height: 100%;
+    body {
+        background-color: $white;
+        ol, ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        button:hover {
+            cursor: pointer;
+        } 
+        font-family: 'HelveticaNeueCyr';
+    }
+}

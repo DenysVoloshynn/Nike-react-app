@@ -1,0 +1,31 @@
+@import "../../../default_variables.scss";
+
+.section {
+    width: 100%;
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 30px;
+    .col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btns {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 5px;
+        justify-content: center;
+        align-items: center;
+        a {
+            color: $black;
+        }
+    }
+}
+
+
+@media(max-width: 1200px) {
+    .btns {
+        grid-column-gap: 0px;
+    }
+}

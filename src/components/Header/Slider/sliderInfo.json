@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Buy 2 or More, Get 25% Off",
+        "otherText": "Nike Members, use code MEMBER23 at checkout. On selected fleece styles.",
+        "link": "Shop"
+    },
+    {
+        "title": "Student Discount",
+        "otherText": "10% off for students.",
+        "link": "Discover"
+    },
+    {
+        "title": "Free Delivery & Returns",
+        "otherText": "Nike Members get free delivery and free 30-day returns. ",
+        "link": "Join Us"
+    }
+]

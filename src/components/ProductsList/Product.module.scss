@@ -1,0 +1,77 @@
+@import "../../default_variables.scss";
+
+.product {
+    // width: 500px;
+    // margin: 30px auto;
+
+
+    .images {
+        position: relative;
+        .image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+
+
+
+        .def-img {
+            opacity: 100%;
+            transition: all 0.2s ease-in-out;
+        }
+        .hover-img {
+            position: absolute;
+            top: 0px; left: 0px; right: 0px; bottom: 0px;
+            opacity: 0%;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+
+
+    .images:hover {
+        .def-img {
+            opacity: 0%;
+        }
+        .hover-img {
+            opacity: 100%;
+        }
+    }
+
+
+
+
+
+    .best-seller {
+        color: $text-color-orange;
+        margin: 7px 0;
+    }
+
+    .shoes-class {
+        font-size: 14px;
+        color: $text-color-grey;
+        margin: 4px 0;
+    }
+    .colors {
+        color: $text-color-grey;
+        font-size: 14px;
+    }
+    .price {
+        margin-top: 20px;
+    }
+
+    // .btn-cart {
+    //     margin-top: 10px;
+    //     width: 100%;
+    //     padding: 10px 0;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     background-color: $white;
+    //     .cart-icon {
+    //         display: block;
+    //         width: 30px;
+    //         height: 30px;
+    //     }
+    // }
+}

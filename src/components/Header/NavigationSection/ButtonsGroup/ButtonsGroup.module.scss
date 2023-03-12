@@ -1,0 +1,13 @@
+@import "../../../../default_variables.scss";
+
+
+.cart-btn {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    background-color: inherit;
+}
+.cart-btn:hover {
+    background-color: $light-grey;
+    border-radius: 50%;
+}

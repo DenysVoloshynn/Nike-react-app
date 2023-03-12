@@ -1,0 +1,90 @@
+@import "../../../../../../default_variables.scss";
+
+
+.search-bar {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    grid-column-gap: 10px;
+    background: $light-grey;
+    border-radius: 100px;
+    width: 200px;
+    height: 45px;
+    cursor: pointer;
+
+    .icon {
+        display: flex;
+        background-color: inherit;
+        align-items: center;
+        justify-content: center;
+        // height: 45px;
+        // width: 45px;
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+    .input {
+        border: none;
+        width: 100%;
+        background-color: inherit;
+        font-size: 17px;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        padding: 0px;
+    }
+
+    .input:focus {
+        outline: none;
+    }
+}
+
+
+.search-bar:hover {
+    background-color: $middle-grey;
+
+    .icon:hover {
+        background-color: $dark-grey;
+    }
+}
+
+
+
+.active-search-bar {
+    width: 100% !important;
+    background: $middle-grey !important;
+
+    .input {
+        background-color: inherit;
+    }
+}
+
+.active-search-bar:hover {
+    background-color: $light-grey;
+}
+
+
+@media (max-width: 1200px) {
+    .search-bar {
+        grid-column-gap: 0px;
+        background-color: inherit;
+        width: fit-content;
+
+        .input {
+            display: none;
+        }
+
+        .icon:hover {
+            background: $light-grey !important;
+        }
+    }
+
+    .active-search-bar {
+        grid-column-gap: 10px;
+
+        .input {
+            display: block;
+        }
+        .icon:hover {
+            background: $dark-grey !important;
+        }
+    }
+}
