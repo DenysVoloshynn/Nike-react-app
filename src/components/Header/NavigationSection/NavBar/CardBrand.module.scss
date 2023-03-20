@@ -1,0 +1,19 @@
+@import "../../../../default_variables.scss";
+
+
+
+.card-brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $light-grey;
+    padding: 20px 20px;
+    img {
+        height: 40px;
+        width: auto;
+        object-fit: cover;
+    }
+    .title {
+        font-size: 19px;
+    }
+}

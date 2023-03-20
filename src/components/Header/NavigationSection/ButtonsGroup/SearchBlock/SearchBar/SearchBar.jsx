@@ -10,8 +10,11 @@ import SearchIcon from '../../../../../../icons/SearchIcon'
 const SearchBar = React.forwardRef(({isActive, setActive}, ref) => {
 
     const searchBarStyles = `${styles["search-bar"]} ${isActive ? styles["active-search-bar"] : ""}`
-    const onChangeInputNandler = () => setActive(true)
 
+    function onChangeInputNandler(e) {
+        ref.current.focus()
+        setActive(true)
+    }
 
     function onClickIconHandler(e) {
         ref.current.focus()

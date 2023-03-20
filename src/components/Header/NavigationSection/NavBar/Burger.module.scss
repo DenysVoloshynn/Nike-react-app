@@ -1,0 +1,49 @@
+@import "../../../../default_variables.scss";
+
+.burger {
+
+    $burger-height: 27px;
+    $line-height: 2px;
+
+    display: none;
+    width: 45px;
+    height: $burger-height;
+    background-color: $white;
+    position: relative;
+
+    .line1,
+    .line2,
+    .line3 {
+        display: block;
+        height: $line-height;
+        background-color: $black;
+        position: absolute;
+    }
+
+    .line1 {
+        top: 0px;
+        width: 80%;
+        left: 10%;
+    }
+
+    .line2 {
+        top: $burger-height / 2px - $line-height;
+        width: 100%;
+        left: 0px;
+    }
+
+    .line3 {
+        width: 80%;
+        left: 10%;
+        top: $burger-height - $line-height;
+    }
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .burger {
+        display: block;
+    }
+}

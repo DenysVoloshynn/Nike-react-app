@@ -33,9 +33,9 @@ function Product({product}: IProductProps) {
                     kr{product.price}
                 </p>
 
-                {/* <button className={styles["btn-cart"]}>
+                <button className={styles["btn-cart"]}>
                     <CartIcon className={styles["cart-icon"]}/>
-                </button> */}
+                </button>
             </div>
         </div>
     )

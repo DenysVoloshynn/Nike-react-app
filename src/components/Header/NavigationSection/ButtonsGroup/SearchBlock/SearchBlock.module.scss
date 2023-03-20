@@ -2,12 +2,12 @@
 
 .search-bar-wrapper {
     align-self: center;
-    z-index: 1000;
+    z-index: 120;
 }
 
 .active-search {
     padding: 10px 25%;
-    position: absolute;
+    position: fixed;
     left: 0px;
     top: 0px;
     width: 100%;

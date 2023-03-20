@@ -1,18 +1,108 @@
+@import "../../../../default_variables.scss";
+
+
 .nav {
     align-self: center;
     display: flex;
     justify-content: space-between;
     width: 600px;
+
+
     .nav-item {
         font-size: 18px;
-        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-        color: black;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: $black;
     }
+
+    .cards-brand {
+        display: none;
+    }
+
 }
 
 
-@media(max-width: 1200px) {
+
+
+
+@media(max-width: 1000px) {
     .nav {
-        display: none;
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        z-index: 100;
+        background-color: $white;
+        width: 40%;
+        height: 100vh;
+        padding: 100px 30px 30px 30px;
+        display: grid;
+        grid-template-rows: repeat(6, 60px);
+        grid-template-columns: 1fr;
+        transition: all 1s ease-out;
+
+
+        .nav-item {
+            font-size: 25px;
+            height: fit-content;
+        }
+
+
+        .cross-btn {
+            top: 15px;
+            right: 20px;
+            position: absolute;
+            justify-self: end;
+            width: 45px;
+            height: 45px;
+            cursor: pointer;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+
+            background-color: white;
+
+            transition: all 0.1s ease-in-out;
+
+
+            .span-lines,
+            .span-lines::before {
+                position: absolute;
+                display: block;
+                width: 2px;
+                height: 28px;
+                background-color: $black;
+            }
+
+            .span-lines {
+                transform: rotate(45deg);
+                left: 22px;
+            }
+
+            .span-lines::before {
+                content: "";
+                left: 0px;
+                transform: rotate(90deg);
+            }
+
+        }
+
+        .cross-btn:hover {
+            background-color: $light-grey;
+        }
+
+
+
+
+        .cards-brand {
+            align-self: flex-end;
+            width: 100%;
+            display: grid;
+            grid-row-gap: 10px;
+            grid-template-rows: repeat(2, 60px);
+        }
+
+
+    }
+    .show-nav {
+        left: 0px;
     }
 }
