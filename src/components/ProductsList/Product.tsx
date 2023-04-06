@@ -1,6 +1,13 @@
+import React, {useContext} from 'react'
+
 import styles from './Product.module.scss'
+
 import IProduct from '../../interfaceProduct'
 import CartIcon from '../../icons/CartIcon'
+
+import {CartContext} from '../../store/cart-context'
+
+
 
 interface IProductProps {
     product: IProduct
@@ -8,6 +15,8 @@ interface IProductProps {
 
 
 function Product({product}: IProductProps) {
+
+    const addItemInCart = useContext(CartContext).addItem
 
 
     return (
@@ -33,9 +42,10 @@ function Product({product}: IProductProps) {
                     kr{product.price}
                 </p>
 
-                <button className={styles["btn-cart"]}>
+                <button onClick={() => addItemInCart(product)} className={styles["btn-cart"]}>
                     <CartIcon className={styles["cart-icon"]}/>
                 </button>
+                
             </div>
         </div>
     )

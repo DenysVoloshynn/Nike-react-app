@@ -3,15 +3,12 @@ import Product from "./Product";
 import IProduct from '../../interfaceProduct'
 
 
-interface IProductsListProps {
-    products: IProduct[]
-}
+// interface IProductsListProps {
+//     products: IProduct[]
+// }
 
-
-function ProductsList({products}: IProductsListProps) {
-
-    
-
+//: IProductsListProps
+function ProductsList({ products }) {
 
 
     return (
@@ -21,7 +18,7 @@ function ProductsList({products}: IProductsListProps) {
             </p>
 
             <div className={styles["products-list"]}>
-                { products.map(p => <Product key={p.id} product={p}/> ) }
+                {products.map(p => <Product key={p.id} product={p} />)}
             </div>
         </div>
     )

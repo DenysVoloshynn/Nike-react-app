@@ -1,0 +1,47 @@
+@import "../../../default_variables.scss";
+
+
+.item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-column-gap: 20px;
+    padding: 10px 40px 0px 0px;
+
+    img {
+        width: 100%;
+    }
+
+
+    .item-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .top-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0 0 0;
+
+            .name {
+                font-size: 19px;
+            }
+
+            .brand {
+                color: $text-color-grey;
+                font-size: 17px;
+                margin-top: 5px;
+            }
+
+            .price {
+                font-size: 18px;
+            }
+        }
+
+        .bottom-row {
+            padding-bottom: 20px;
+        }
+    }
+
+
+}

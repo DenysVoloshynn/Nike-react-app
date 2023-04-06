@@ -11,7 +11,7 @@ function Backdrop({onClick}: IBackdropProps) {
 
     return (
         <>
-            {ReactDOM.createPortal(<div onClick={onClick} className={styles.backdrop}></div>,overlaysHTML)}
+            {ReactDOM.createPortal(<div onClick={onClick} className={styles.backdrop}></div>, overlaysHTML)}
         </>
     )
 }

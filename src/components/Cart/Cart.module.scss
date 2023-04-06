@@ -1,0 +1,16 @@
+@import "../../default_variables.scss";
+
+
+.cart {
+    position: fixed;
+    top: 15%;
+    left: 17%;
+    height: 70%;
+    width: 66%;
+    background-color: $white;
+    z-index: 15;
+    padding: 30px;
+
+    display: grid;
+    grid-template-columns: 7fr 4fr;
+}
